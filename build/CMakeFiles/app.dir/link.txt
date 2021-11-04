@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o  -o app 
