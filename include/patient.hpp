@@ -11,6 +11,6 @@ public:
     patient(int a_grade = 2);
     patient(const patient& source);
     int treatment(doctor& doc);
-
+    patient &operator=(const patient &rhs); //copy assogment(operator overloading)
 };
 #endif

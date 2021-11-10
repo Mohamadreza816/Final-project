@@ -33,7 +33,7 @@ void doctor::set_xp(int status) //status 0 = healthe person-----status 1 = sick 
 /*****************************************************/
 /*****************************************************/
 //get_xp method
-int doctor::get_xp()
+int doctor::get_xp() const
 {
     return xp;
 }
@@ -77,7 +77,7 @@ void doctor::set_energy(int time, int status)
 /*****************************************************/
 /*****************************************************/
 //get_energy method
-int doctor ::get_energy()
+int doctor ::get_energy() const
 {
     return energy;
 }
@@ -111,7 +111,7 @@ void doctor::set_credit(int status)
 /*****************************************************/
 /*****************************************************/
 //get_credit method
-int doctor::get_credit()
+int doctor::get_credit() const
 {
     return credit;
 }

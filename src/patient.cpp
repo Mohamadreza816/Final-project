@@ -71,3 +71,11 @@ int patient::treatment(doctor& doc)
 //End of treatment method
 /*****************************************************/
 /*****************************************************/
+patient & patient ::operator=(const patient &rhs)
+{
+    if (this == &rhs)
+    {
+        return *this;
+    }
+    grade = rhs.grade; 
+}

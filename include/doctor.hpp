@@ -17,11 +17,11 @@ public:
     doctor(char* a_name);//constructor
     //doctor(const doctor& copy);//copy constructor
     void set_xp(int status);//set experience
-    int get_xp();//return experience value
+    int get_xp()const;//return experience value
     void set_energy(int time, int status);// set energy after each patient
-    int get_energy();//return enegy value
+    int get_energy() const;//return enegy value
     void set_credit(int status);
-    int get_credit();//return credit value
+    int get_credit()const;//return credit value
     void boost_energy();//decrease xp,increase energy 
 };
 

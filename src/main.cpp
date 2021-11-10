@@ -7,9 +7,11 @@ int main()
     // vector<patient> list;
     // patient p1{1};
     // list.push_back(p1);
-    // patient p2{p1};
+    // patient p2;
+    // p2 = p1;   
     // list.push_back(p2);
-    // patient p3{p1};
+    // patient p3;
+    // p3 = p1;
     // list.push_back(p3);
     // patient p4{p1};
     // list.push_back(p4);
