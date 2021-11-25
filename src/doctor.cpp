@@ -1,6 +1,10 @@
 #include "../include/doctor.hpp"
 using namespace std;
-doctor::doctor(char *a_name)
+
+//static var
+int doctor::coin = 50;
+
+doctor::doctor(string a_name)
     : name{a_name}
 {
 }
@@ -11,15 +15,15 @@ void doctor::set_xp(int status) //status 0 = healthe person-----status 1 = sick 
 {
     try
     {
-        if (status == 0)
+        if (status == HEALTHY)
         {
             xp = xp + 10;
         }
-        if (status == 1)
+        if (status == ILL)
         {
             xp = xp + 5;
         }
-        if (status != 0 && status != 1)
+        if (status != HEALTHY && status != ILL)
         {
             throw out_of_range("Error....input status is invalid!!");
         }
@@ -49,16 +53,16 @@ void doctor::set_energy(int time, int status)
         {
             throw out_of_range("Error...Maximum of each patient is 20 minuts!!!");
         }
-        energy = energy - time * 0.5;
-        if (status == 0)
+        energy = energy - (time * 0.5);
+        if (status == HEALTHY)
         {
             energy += 2;
         }
-        if (status == 1)
+        if (status == ILL)
         {
             energy -= 5;
         }
-        if (status != 0 && status != 1)
+        if (status != HEALTHY && status != ILL)
         {
             throw out_of_range("Error....input status is invalid!!");
         }
@@ -66,9 +70,8 @@ void doctor::set_energy(int time, int status)
         {
             cout << "Game Over!!!" << endl;
         }
-        
     }
-    catch (out_of_range& e)
+    catch (out_of_range &e)
     {
         std::cerr << e.what() << '\n';
     }
@@ -84,20 +87,20 @@ int doctor ::get_energy() const
 //End of get_energy method
 /*****************************************************/
 /*****************************************************/
-//set_credit method 
+//set_credit method
 void doctor::set_credit(int status)
 {
     try
     {
-        if (status == 0)
+        if (status == HEALTHY)
         {
             credit = credit + 5;
         }
-        if (status == 1)
+        if (status == ILL)
         {
             credit = credit - 5;
         }
-        if (status != 0 && status != 1)
+        if (status != HEALTHY && status != ILL)
         {
             throw out_of_range("Error....input status is invalid!!");
         }
@@ -118,6 +121,23 @@ int doctor::get_credit() const
 //End of get_credit method
 /*****************************************************/
 /*****************************************************/
+//set_coint method
+void doctor::set_coin(int amount)
+{
+    //amount depend os patient grade
+    coin = coin + amount;
+}
+//End of set coin method
+/*****************************************************/
+/*****************************************************/
+//return coin method
+int doctor::get_coin()
+{
+    return coin;
+}
+//End
+/*****************************************************/
+/*****************************************************/
 //boost_energy
 void doctor::boost_energy()
 {
@@ -125,7 +145,8 @@ void doctor::boost_energy()
     {
         xp -= 5;
         energy += 5;
-    }else
+    }
+    else
     {
         cout << "Access Denied!!!" << endl;
     }

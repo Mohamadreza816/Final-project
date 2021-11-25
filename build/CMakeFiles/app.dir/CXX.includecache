@@ -13,30 +13,24 @@ stdexcept
 -
 
 /home/mohamadreza/Desktop/Final-project/include/medicaldevice.hpp
+../include/doctor.hpp
+/home/mohamadreza/Desktop/Final-project/include/doctor.hpp
 iostream
 -
 
 /home/mohamadreza/Desktop/Final-project/include/patient.hpp
-../include/doctor.hpp
+doctor.hpp
 /home/mohamadreza/Desktop/Final-project/include/doctor.hpp
-
-/home/mohamadreza/Desktop/Final-project/src/doctor.cpp
-../include/doctor.hpp
-/home/mohamadreza/Desktop/Final-project/include/doctor.hpp
+medicaldevice.hpp
+/home/mohamadreza/Desktop/Final-project/include/medicaldevice.hpp
 
 /home/mohamadreza/Desktop/Final-project/src/main.cpp
 ../include/doctor.hpp
 /home/mohamadreza/Desktop/Final-project/include/doctor.hpp
 ../include/patient.hpp
 /home/mohamadreza/Desktop/Final-project/include/patient.hpp
-vector
--
-
-/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp
 ../include/medicaldevice.hpp
 /home/mohamadreza/Desktop/Final-project/include/medicaldevice.hpp
-
-/home/mohamadreza/Desktop/Final-project/src/patient.cpp
-../include/patient.hpp
-/home/mohamadreza/Desktop/Final-project/include/patient.hpp
+vector
+-
 

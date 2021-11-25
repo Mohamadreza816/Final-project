@@ -5,13 +5,16 @@ CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o: /hom
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o: /home/mohamadreza/Desktop/Final-project/src/doctor.cpp
 
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o: /home/mohamadreza/Desktop/Final-project/include/doctor.hpp
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o: /home/mohamadreza/Desktop/Final-project/include/medicaldevice.hpp
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o: /home/mohamadreza/Desktop/Final-project/include/patient.hpp
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o: /home/mohamadreza/Desktop/Final-project/src/main.cpp
 
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o: /home/mohamadreza/Desktop/Final-project/include/doctor.hpp
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o: /home/mohamadreza/Desktop/Final-project/include/medicaldevice.hpp
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o: /home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp
 
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o: /home/mohamadreza/Desktop/Final-project/include/doctor.hpp
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o: /home/mohamadreza/Desktop/Final-project/include/medicaldevice.hpp
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o: /home/mohamadreza/Desktop/Final-project/include/patient.hpp
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o: /home/mohamadreza/Desktop/Final-project/src/patient.cpp
 
