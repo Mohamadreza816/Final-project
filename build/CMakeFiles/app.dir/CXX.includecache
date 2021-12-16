@@ -13,7 +13,7 @@ stdexcept
 -
 
 /home/mohamadreza/Desktop/Final-project/include/medicaldevice.hpp
-../include/doctor.hpp
+doctor.hpp
 /home/mohamadreza/Desktop/Final-project/include/doctor.hpp
 iostream
 -
@@ -23,6 +23,12 @@ doctor.hpp
 /home/mohamadreza/Desktop/Final-project/include/doctor.hpp
 medicaldevice.hpp
 /home/mohamadreza/Desktop/Final-project/include/medicaldevice.hpp
+vector
+-
+
+/home/mohamadreza/Desktop/Final-project/src/doctor.cpp
+../include/doctor.hpp
+/home/mohamadreza/Desktop/Final-project/include/doctor.hpp
 
 /home/mohamadreza/Desktop/Final-project/src/main.cpp
 ../include/doctor.hpp

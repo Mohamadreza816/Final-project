@@ -69,6 +69,7 @@ void doctor::set_energy(int time, int status)
         if (energy <= 0)
         {
             cout << "Game Over!!!" << endl;
+            exit(0);
         }
     }
     catch (out_of_range &e)

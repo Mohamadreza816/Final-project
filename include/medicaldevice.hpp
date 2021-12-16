@@ -1,6 +1,6 @@
 #ifndef MEDICALDIVICE_HPP
 #define MEDICALDIVICE_HPP
-#include "../include/doctor.hpp"
+#include "doctor.hpp"
 #include <iostream>
 using namespace std;
 //abstract class
@@ -14,7 +14,9 @@ public:
     virtual void buy(doctor &, int) = 0; // buy device(abstract class)
     virtual bool use(doctor &) = 0;      // how to use(abstract class)
     virtual int get_count() = 0;         //return count of pill or ampoule
-    virtual string get_name();           //return name
+    virtual string get_name() = 0;           //return name
+    //virtual bool operator==(string arg);  
+    virtual ~device();
 };
 //----------------------------------------------
 //pill class inhreted from abstract class(device)
@@ -30,6 +32,8 @@ public:
     virtual bool use(doctor &) override;
     virtual int get_count() override;
     virtual string get_name() override;
+     bool operator==(device & rhs);
+    virtual ~pill();
 };
 //----------------------------------------------
 //ampoule class inhreted from abstract class(device class)
@@ -38,12 +42,13 @@ class ampoule : public device
 private:
     static int count_ampoule;
     string name;
-
 public:
     ampoule(string); //constructor
     virtual void buy(doctor &, int) override;
     virtual bool use(doctor &) override;
     virtual int get_count() override;
     virtual string get_name() override;
+     bool operator==(device & rhs) ;
+    virtual ~ampoule();
 };
 #endif

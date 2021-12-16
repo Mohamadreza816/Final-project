@@ -57,9 +57,35 @@ include CMakeFiles/app.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/app.dir/flags.make
 
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o: /home/mohamadreza/Desktop/Final-project/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamadreza/Desktop/Final-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o -c /home/mohamadreza/Desktop/Final-project/src/main.cpp
+
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mohamadreza/Desktop/Final-project/src/main.cpp > CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.i
+
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mohamadreza/Desktop/Final-project/src/main.cpp -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.s
+
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o: /home/mohamadreza/Desktop/Final-project/src/doctor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamadreza/Desktop/Final-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o -c /home/mohamadreza/Desktop/Final-project/src/doctor.cpp
+
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mohamadreza/Desktop/Final-project/src/doctor.cpp > CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.i
+
+CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mohamadreza/Desktop/Final-project/src/doctor.cpp -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.s
+
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o: /home/mohamadreza/Desktop/Final-project/src/patient.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamadreza/Desktop/Final-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamadreza/Desktop/Final-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o -c /home/mohamadreza/Desktop/Final-project/src/patient.cpp
 
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.i: cmake_force
@@ -72,7 +98,7 @@ CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.s: cma
 
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o: /home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamadreza/Desktop/Final-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamadreza/Desktop/Final-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o -c /home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp
 
 CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.i: cmake_force
@@ -83,46 +109,20 @@ CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.s
 
-CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o: /home/mohamadreza/Desktop/Final-project/src/doctor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamadreza/Desktop/Final-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o -c /home/mohamadreza/Desktop/Final-project/src/doctor.cpp
-
-CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mohamadreza/Desktop/Final-project/src/doctor.cpp > CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.i
-
-CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mohamadreza/Desktop/Final-project/src/doctor.cpp -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.s
-
-CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o: /home/mohamadreza/Desktop/Final-project/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mohamadreza/Desktop/Final-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o -c /home/mohamadreza/Desktop/Final-project/src/main.cpp
-
-CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mohamadreza/Desktop/Final-project/src/main.cpp > CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.i
-
-CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mohamadreza/Desktop/Final-project/src/main.cpp -o CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.s
-
 # Object files for target app
 app_OBJECTS = \
-"CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o" \
-"CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o" \
+"CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o" \
 "CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o" \
-"CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o"
+"CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o" \
+"CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
 
+app: CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o
+app: CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o
 app: CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/patient.cpp.o
 app: CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/medicaldevice.cpp.o
-app: CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/doctor.cpp.o
-app: CMakeFiles/app.dir/home/mohamadreza/Desktop/Final-project/src/main.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: CMakeFiles/app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mohamadreza/Desktop/Final-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable app"

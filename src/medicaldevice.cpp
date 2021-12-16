@@ -1,20 +1,20 @@
-#include "../include/medicaldevice.hpp"
+ #include "../include/medicaldevice.hpp"
 
-using namespace std;
+ using namespace std;
 //device construcrtor
 device::device(string a_name)
-    : name{a_name}
+   : name{a_name}
 {
 }
 //End of constructor
 /*****************************************************/
 /*****************************************************/
-//get_name
-string device::get_name()
+//device destructor
+device::~device()
 {
-    return name;
+    
 }
-//end of get_name method
+//end of device detructor
 
 //------------------------------------------------
 //pill class implement
@@ -24,7 +24,7 @@ int pill ::count_pill = 0;
 
 //pill constructor
 pill::pill(string a_name)
-    : device{a_name}
+:device{a_name}
 {
     name = a_name;
 }
@@ -35,33 +35,15 @@ pill::pill(string a_name)
 void pill::buy(doctor &doc, int count)
 {
     //price of pill is 5 coin
-    try
+    int sum = count * 5;
+    if (doc.get_coin() >= sum)
     {
-        if (name == "pill")
-        {
-            int sum = count * 5;
-            if (doc.get_coin() >= sum)
-            {
-                doc.set_coin(-sum);//decrease amount of coin
-                count_pill = count_pill + count;//increase pill count
-            }
-            else
-            {
-                throw out_of_range("count of coin isn't enogh!");
-            }
-        }
-        else
-        {
-            throw invalid_argument("this device dosen't exist");
-        }
+        doc.set_coin(-sum);              //decrease amount of coin
+        count_pill = count_pill + count; //increase pill count
     }
-    catch (const out_of_range &e)
+    else
     {
-        std::cerr << e.what() << '\n';
-    }
-    catch (const invalid_argument &e)
-    {
-        cerr << e.what() << endl;
+        throw out_of_range("count of coin isn't enough!");
     }
 }
 //end of buy method
@@ -73,30 +55,19 @@ bool pill::use(doctor &doc)
     //use poll for treatment
     try
     {
-        if (name == "pill")
+
+        if (doc.get_xp() >= 0)
         {
-            if (doc.get_xp() >= 0)
-            {
-                count_pill--;//decrease pill count
-            }
-            else
-            {
-                throw out_of_range("ypur experience isn't enogh for use pill!");
-            }
+            count_pill--; //decrease pill count
         }
         else
         {
-            throw invalid_argument("this device dosen't exist");
+            throw out_of_range("ypur experience isn't enough for use pill!");
         }
     }
     catch (const out_of_range &e)
     {
         std::cerr << e.what() << '\n';
-        return false;
-    }
-    catch (const invalid_argument &e)
-    {
-        cerr << e.what() << endl;
         return false;
     }
     return true;
@@ -117,7 +88,18 @@ string pill::get_name()
 {
     return name;
 }
-
+//end of get_name
+/*****************************************************/
+/*****************************************************/
+//== operator for pill
+bool pill::operator==(device & rhs)
+{
+    return this->get_name() == rhs.get_name();
+}
+//pill destructor
+pill::~pill()
+{
+}
 //------------------------------------------------
 //ampoule class implement
 
@@ -137,33 +119,16 @@ ampoule::ampoule(string a_name)
 void ampoule::buy(doctor &doc, int count)
 {
     //price of ampoule is 10 coin
-    try
+
+    int sum = count * 10;
+    if (doc.get_coin() >= sum)
     {
-        if (name == "ampoule")
-        {
-            int sum = count * 10;
-            if (doc.get_coin() >= sum)
-            {
-                doc.set_coin(-sum);//decrease amount of coin
-                count_ampoule = count_ampoule + count;//increase ampoule count
-            }
-            else
-            {
-                throw out_of_range("count of coin isn't enogh!");
-            }
-        }
-        else
-        {
-            throw invalid_argument("this device dosen't exist");
-        }
+        doc.set_coin(-sum);                    //decrease amount of coin
+        count_ampoule = count_ampoule + count; //increase ampoule count
     }
-    catch (const out_of_range &e)
+    else
     {
-        std::cerr << e.what() << '\n';
-    }
-    catch (const invalid_argument &e)
-    {
-        cerr << e.what() << endl;
+        throw out_of_range("count of coin isn't enough!");
     }
 }
 //End of buy method
@@ -172,35 +137,16 @@ void ampoule::buy(doctor &doc, int count)
 // use method for ampoule
 bool ampoule::use(doctor &doc)
 {
-    //use ampoule for treatment
-    try
+
+    if (doc.get_xp() >= 30)
     {
-        if (name == "ampoule")
-        {
-            if (doc.get_xp() >= 30)
-            {
-                count_ampoule--;//decrease ampoule count
-            }
-            else
-            {
-                throw out_of_range("your experience isn't enogh for use ampoule!");
-            }
-        }
-        else
-        {
-            throw invalid_argument("this device dosen't exist");
-        }
+        count_ampoule--; //decrease ampoule count
     }
-    catch (const out_of_range &e)
+    else
     {
-        std::cerr << e.what() << '\n';
-        return false;
+        throw invalid_argument("your experience isn't enough for use ampoule!");
     }
-    catch (const invalid_argument &e)
-    {
-        cerr << e.what() << endl;
-        return false;
-    }
+
     return true;
 }
 //End of use method for ampoule
@@ -222,3 +168,15 @@ string ampoule::get_name()
 //get name constructor
 /*****************************************************/
 /*****************************************************/
+//==operator for ampoule class
+bool ampoule::operator==(device & rhs)
+{
+    return this->get_name() == rhs.get_name();
+}
+/*****************************************************/
+/*****************************************************/
+//ampoule destructor
+ampoule::~ampoule()
+{
+
+}
