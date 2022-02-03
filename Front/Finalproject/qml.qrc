@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>Buyzone.qml</file>
+        <file>MyButton.qml</file>
+        <file>Myrectangel.qml</file>
+        <file>stackveiw.qml</file>
+        <file>Treatment.qml</file>
+        <file>Buystation.qml</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>game.png</file>
+        <file>icons8-left-arrow-50.png</file>
+        <file>pills-bottle.png</file>
+        <file>syringe (1).png</file>
+        <file>grade1.png</file>
+        <file>grade2.png</file>
+        <file>grade3.png</file>
+        <file>energy-drink.png</file>
+        <file>Hospital building flat illustration - Kit8.png</file>
+        <file>34627.png</file>
+        <file>store.png</file>
+        <file>vecteezy_old-man-patient-sleeping-on-the-bed-with-modern-isometric-style_.jpg</file>
+        <file>DD-Game-Over-Illustration-34432-Preview.jpg</file>
+    </qresource>
+</RCC>

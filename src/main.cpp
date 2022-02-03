@@ -43,6 +43,12 @@ int main()
                 cout << "Enter a number for pateinet grade(1 - 3): ";
                 int size{0};
                 cin >> size;
+                if (size < 1 || size > 3)
+                {
+                    cout << "=============================" << endl;
+                    cout << "Entered number is incorrect!!!" << endl;
+                    return 0;
+                }
                 patient p(size);
                 p.treatment(d1, md_list);
                 p_list.push_back(p); //store patient in list
@@ -106,7 +112,6 @@ int main()
                 cout << "=============================" << endl;
                 cout << "Entered number is incorrect!!!" << endl;
                 return 0;
-               
             }
             message();
             cin.clear();
